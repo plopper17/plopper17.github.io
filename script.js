@@ -4,7 +4,8 @@ var guys = {
 	"kazor": "http://steamcommunity.com/profiles/76561197965922455",
 	"viking": "http://steamcommunity.com/profiles/76561198327711405",
 	"shinez": "http://steamcommunity.com/profiles/76561198038210705",
-	"zyklon": "http://steamcommunity.com/profiles/76561198112026244"
+	"zyklon": "http://steamcommunity.com/profiles/76561198112026244",
+	"mbe": "http://steamcommunity.com/profiles/76561198127301548"
 }
 
 var links = {
