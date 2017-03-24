@@ -11,8 +11,7 @@ var guys = {
 var links = {
 	"steam": "http://steamcommunity.com/id/unsuccessful",
 	"youtube": "http://bit.ly/ploppyoutube",
-	"twitter": "http://bit.ly/plopptwitter",
-	"cloetta.pw": "http://cloetta.pw/"
+	"twitter": "http://bit.ly/plopptwitter"
 }
 
 var marquee = document.getElementsByClassName("js-marquee")[0];
