@@ -15,7 +15,7 @@ var links = {
 	"twitter": "http://bit.ly/plopptwitter"
 }
 
-var marquee = document.getElementsByClassName("js-marquee")[0];
+var marquee = document.getElementsByClassName("js-marquee")[1];
 
 for (var guy in guys)
 {
