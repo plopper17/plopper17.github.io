@@ -1,8 +1,8 @@
 var guys = {
-	"kazor": "http://steamcommunity.com/profiles/76561197965922455",
 	"shinez": "http://steamcommunity.com/profiles/76561198038210705",
-	"mbe": "http://steamcommunity.com/profiles/76561198127301548",
+	"kazor": "http://steamcommunity.com/profiles/76561197965922455",
 	"kosta": "http://steamcommunity.com/profiles/76561198370109289",
+	"mbe": "http://steamcommunity.com/profiles/76561198127301548",
 	"zyklon": "http://steamcommunity.com/profiles/76561198112026244",
 	"nvll": "http://steamcommunity.com/profiles/76561198026177756",
 	"ode": "http://steamcommunity.com/profiles/76561198298804931"
