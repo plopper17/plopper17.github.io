@@ -1,11 +1,12 @@
 var guys = {
-	"nvll": "http://steamcommunity.com/profiles/76561198026177756",
-	"ode": "http://steamcommunity.com/profiles/76561198298804931",
 	"kazor": "http://steamcommunity.com/profiles/76561197965922455",
 	"shinez": "http://steamcommunity.com/profiles/76561198038210705",
-	"zyklon": "http://steamcommunity.com/profiles/76561198112026244",
 	"mbe": "http://steamcommunity.com/profiles/76561198127301548",
-	"kosta": "http://steamcommunity.com/profiles/76561198370109289"
+	"kosta": "http://steamcommunity.com/profiles/76561198370109289",
+	"zyklon": "http://steamcommunity.com/profiles/76561198112026244",
+	"nvll": "http://steamcommunity.com/profiles/76561198026177756",
+	"ode": "http://steamcommunity.com/profiles/76561198298804931"
+	
 }
 
 var links = {
