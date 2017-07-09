@@ -106,14 +106,14 @@ video {
 
 @-webkit-keyframes marqueeAnimation-62889320 {
 	100% {
-		margin-left:-320px
+		margin-left:-380px
 	}
 }
 
 .js-marquee-wrapper {
 	width: 400px;
 	margin-left: 400px;
-	animation: marqueeAnimation-62889320 20s linear 0s infinite;
+	animation: marqueeAnimation-62889320 12s linear 0s infinite;
 }
 
 .js-marquee {
