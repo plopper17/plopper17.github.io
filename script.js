@@ -12,7 +12,8 @@ var guys = {
 var links = {
 	"steam": "http://steamcommunity.com/profiles/76561198195043517",
 	"youtube": "http://bit.ly/ploppyoutube",
-	"twitter": "http://bit.ly/plopptwitter"
+	"twitter": "http://bit.ly/plopptwitter",
+	"snapchat": "https://www.snapchat.com/add/plopp114"
 }
 
 var marquee = document.getElementsByClassName("js-marquee")[0];
