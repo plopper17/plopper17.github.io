@@ -5,8 +5,8 @@ var guys = {
 	"mbe": "http://steamcommunity.com/profiles/76561198127301548",
 	"zyklon": "http://steamcommunity.com/profiles/76561198112026244",
 	"nvll": "http://steamcommunity.com/profiles/76561198026177756",
-	"ode": "http://steamcommunity.com/profiles/76561198298804931"
-	
+	"ode": "http://steamcommunity.com/profiles/76561198298804931",
+	"mz": "http://steamcommunity.com/profiles/76561198348703552"
 }
 
 var links = {
