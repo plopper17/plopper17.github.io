@@ -10,7 +10,7 @@ var guys = {
 }
 
 var links = {
-	"steam": "http://steamcommunity.com/profiles/76561198195043517",
+	"steam": "http://steamcommunity.com/profiles/76561197999277357/",
 	"youtube": "http://bit.ly/ploppyoutube",
 	"twitter": "http://bit.ly/plopptwitter"
 }
