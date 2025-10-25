@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anteckningar från källarhålet</title>
+  <meta name="description" content="">
+  <style>
+    :root{ --fg:#111; --bg:#fff; --muted:#666; --maxw:62ch; }
+    html,body{height:100%}
+    body{ margin:0; padding:3rem 1.25rem 6rem; color:var(--fg); background:var(--bg);
+      font:16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial; }
+    header,main,footer{ max-width:var(--maxw); margin:0 auto; }
+    h1{ font-family:ui-serif, Georgia, "Times New Roman", Times, serif; font-size:clamp(1.8rem,4vw,3rem); text-transform:lowercase; margin:0 0 .25rem 0; }
+    .subtitle{ font-size:.95rem; color:var(--muted); }
+    nav{ margin-top:2rem; border-top:1px solid #ddd; padding-top:1rem; }
+    .post-link{ display:flex; gap:.75rem; align-items:baseline; text-decoration:none; color:inherit; padding:.25rem 0; }
+    .post-link:hover .title{ text-decoration:underline; }
+    .date{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas; font-size:.875rem; color:var(--muted); min-width:8ch; }
+    .title{ font-weight:600; }
+    main{ margin-top:2rem; }
+    article{ margin-top:2rem; }
+    article h2{ font-family:ui-serif,Georgia,Times,serif; margin-bottom:.25rem; }
+    .meta{ color:var(--muted); font-size:.9rem; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas; margin-bottom:1rem; }
+    .content pre{ overflow:auto; padding:.75rem 1rem; border:1px solid #eee; border-radius:8px; background:#fafafa; }
+    .content blockquote{ border-left:3px solid #ddd; margin:1rem 0; padding:.25rem 1rem; color:#333; }
+    .back{ display:inline-block; margin-bottom:1rem; text-decoration:none; color:inherit; border-bottom:1px solid #000; }
+    footer{ margin-top:4rem; color:var(--muted); font-size:.85rem; border-top:1px dashed #ddd; padding-top:1rem; }
+    .note{ background:#f9f9f9; border:1px dashed #bbb; border-radius:10px; padding:1rem; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Anteckningar från källarhålet</h1>
+  </header>
+
+  <nav id="toc">
+    <h2>Inlägg</h2>
+    <div id="toc-list"></div>
+  </nav>
+
+  <main id="view"></main>
+
+  <footer>
+    <p></p>
+  </footer>
+
+  <!-- ===================================================== -->
+  <!-- POST-ARKIV: LÄGG DINA INLÄGG HÄR NEDANFÖR             -->
+  <!-- Kopiera mallen och ersätt datum, id, rubrik och text.  -->
+  <!-- ===================================================== -->
+  <section id="posts" hidden>
+
+    <!-- MALL FÖR NYTT INLÄGG
+    <article class="post" id="slug-for-inlagg" data-date="2025-10-12">
+      <h2>Rubrik för inlägget</h2>
+      <div class="content">
+        <p>Din text här. Du kan använda <strong>fetstil</strong>, <em>kursiv</em>, listor, länkar m.m. (ren HTML).</p>
+        <pre><code>// Kodexempel? Lägg i &lt;pre&gt;&lt;code&gt;…&lt;/code&gt;&lt;/pre&gt;.
+console.log('hej');</code></pre>
+        <blockquote>En kort notis eller ett citat.</blockquote>
+      </div>
+    </article>
+    SLUT PÅ MALL -->
+
+
+<article class="post" id="om-relationer" data-date="2025-10-25">
+  <h2>Om relationer</h2>
+  <div class="content">
+    <p>
+      Vad är egentligen ett tings essens? 
+    </p>
+<p>
+  En första tanke är dess attribut, egenskaperna som vi kopplar till det: färgen, vikten, formen, osv. Men existerar dessa attribut som något eget? Färgen finns bara i kontrast till andra färger, vikten blir märkbar först i jämförelse med något lättare eller tyngre, formen får sin mening genom skillnaden mot det som omger den. För att något ska framträda måste det finnas en skala, ett spektrum av möjliga skillnader där varje punkt bara blir begriplig genom sin plats i helheten. Allt det som först tycktes tillhöra tinget i sig visar sig uppstå mellan tinget och något annat.
+</p>
+
+    <p>
+      Kanske är det därför omöjligt att tala om ett ting utan att samtidigt tala om dess relationer. Det är som om tingen bara blir synliga i den rörelse som skiljer dem åt. Om man försöker tänka ett ting helt isolerat, lösryckt ur alla sammanhang, försvinner det. Kvar blir något utan innehåll. 
+    </p>
+    <p>
+      Hegel skriver i <em>Fenomenologin</em> att medvetandet vill förstå världen som bestående av självständiga enheter, men att det ständigt stöter på motsägelser. Varje gång man försöker beskriva ett ting visar sig dess egenskaper redan peka utanför sig själva. Vitt är vitt bara i relation till svart, tungt är tungt bara i närheten av något lätt. Medvetandet försöker samla allt detta i en enhetlig bild men finner att tinget hela tiden glider isär i sina relationer. 
+    </p>
+    <p>
+      Om ett ting inte är något slutet utan ett knutpunkt av relationer, då blir verkligheten inte längre en samling objekt utan ett nät av beroenden. Egenskaperna hör inte till noderna utan till banden mellan dem. Det som verkar vara en sak är egentligen en plats i ett mönster. 
+    </p>
+    <p>
+      Om man vill formulera det som en modell skulle man kunna föreställa sig världen som en graf. Varje nod är ett ting, varje kant en relation. Men grafens sanning ligger inte i noderna utan i strukturen. Tar man bort en kant förändras hela mönstret. Noderna får sin mening genom sina kopplingar, inte genom något som finns i dem själva. 
+    </p>
+    <p>
+      Tänk då att man låter Kruskals algoritm löpa över denna världsgraf. Den söker ett minimalt träd som spänner upp grafen, den minsta mängden relationer som ändå håller allt samman. Ett universum reducerat till bara det mest nödvändiga, till de förbindelser som måste finnas för att helheten inte ska falla isär. Vad skulle en sådan värld vara? Ett rent skelett av relationer, kanske fullständigt balanserad men också helt stilla.
+    </p>
+    <p>
+      Kanske är det just överflödet som gör världen levande. Alla dessa onödiga kopplingar, dessa motsägelser och överlappningar som inte går att rensa bort utan att något förloras. Om allt reducerades till det mest effektiva skulle rörelsen upphöra. Kvar skulle bara finnas struktur utan liv. Hegel skulle kanske säga att motsägelserna är det som driver världen framåt, att verkligheten består i spänningen mellan det som vill vara ett och det som alltid redan är många. 
+    </p>
+    <p>
+      Kanske finns inget ting som inte redan är i rörelse. Vi kan försöka ringa in det, ge det namn och kontur, men i samma stund vi gör det börjar det redan förändras, dras ut mot andra ting. Världen tycks vilja fortsätta relatera, fortsätta tänka sig själv genom skillnad. 
+    </p>
+    <p>
+      Så kanske ligger ett tings essens inte i vad det är, utan i hur det står i förhållande till allt annat. I dess sätt att svara på världen, att reflektera den och påverkas av den. Och vi är så klart en del av detta nät, inte som betraktare utanför utan som punkter i samma struktur. 
+    </p>
+  </div>
+</article>
+
+
+
+    <article class="post" id="On truth" data-date="2024-03-03">
+  <h2>Om sanning</h2>
+  <div class="content">
+    <p>
+I logiken säger vi att ett formellt system är <em>sunt</em> om allt som kan bevisas i systemet också är sant i den tänkta modellen: 
+</p>
+<p style="text-align:center;"> ⊢ φ ⇒ ⊨ φ </p>
+<p>
+Och att det är <em>fullständigt</em> om allt som är sant också kan bevisas: 
+</p>
+<p style="text-align:center;"> ⊨ φ ⇒ ⊢ φ </p>
+<p>
+Om båda villkoren gällde skulle sanning och bevisbarhet sammanfalla. Gödel visade att så inte kan vara fallet i tillräckligt uttrycksfulla system. Det finns satser φ som är sanna men inte bevisbara, om systemet är konsistent.
+</p>
+<hr/>
+<p>
+Tarski definierade sanning relativt en modell M:
+</p>
+<p style="text-align:center;"> M ⊨ φ ⇔ φ är sann i M </p>
+<p>
+För aritmetiken tänker vi oss modellen ℕ. Men vad betyder egentligen “sant i ℕ”? Definitionen förutsätter redan en tolkning, en förståelse som ligger utanför systemet. Gödel visade att även om vi försöker fånga denna förståelse formellt, finns det alltid sanningar som undfly vårt språk. 
+</p>
+<hr/>
+<p>
+Wittgenstein menar i sin <em>Tractatus Logico-Philosophicus</em> att språket avbildar världen. “Världen är allt som är fallet” (1). “Världen är helheten av fakta, inte av ting” (1.1). “Satsen är en bild av verkligheten” (4.01). En sats är sann när världen verkligen är så som satsen visar. 
+</p>
+<p>
+Men i matematiken är “världen” inte något utanför oss, utan en struktur som vi själva har byggt. När vi säger att ett påstående är sant i ℕ, säger vi egentligen att det stämmer med den bild av ℕ som vårt språk redan har målat upp. Då blir sanning inte en spegel av något oberoende, utan en relation inom vårt eget system av begrepp. 
+</p>
+<p>
+Wittgenstein skriver också: “Gränserna för mitt språk betyder gränserna för min värld” (5.6). Om det stämmer, finns det ingen “sanning utanför språket”, bara sanningar inom olika språkspel. I så fall blir sanningen relativ i den meningen att den hör till ett sammanhang, en uppsättning regler, en värld vi själva formulerat. 
+</p>
+  </div>
+</article>
+
+    
+<article class="post" id="On problems" data-date="2025-10-11">
+  <h2>Problem och dess lösningar</h2>
+  <div class="content">
+    <p> I komplexitetsteorin studerar vi inte bara <em>om</em> ett problem går att lösa, utan <em>hur svårt</em> det är att lösa. När vi säger att ett problem är “effektivt lösbart” menar vi vanligen att det finns en algoritm vars körtid växer polynomiellt med indata-storleken. Klassen av alla sådana beslutsproblem kallas <strong>P</strong> (för <em>polynomial time</em>). </p>
+    <p> Man insåg snart att denna definition lämnar en lucka. För många problem verkar det hopplöst svårt att hitta en lösning, men om någon ger oss en föreslagen lösning, kan vi kontrollera dess giltighet snabbt. Denna observation ledde till klassen <strong>NP</strong>, definierad som mängden språk <em>A</em> för vilka det finns ett språk <em>B ∈ P</em> och ett polynom <em>p</em> så att </p>
+    <p style="text-align:center;"> x ∈ A ⇔ ∃y, |y| ≤ p(|x|) : (x, y) ∈ B. </p>
+    <p> Alltså: det finns ett vittne <em>y</em> av polynomiell längd som övertygar en polynomiskt effektiv verifierare om att <em>x</em> bör accepteras. </p>
+    <hr/>
+    <p> Klasskillnaden mellan <strong>P</strong> och <strong>NP</strong> handlar inte om datorns fysik, utan om <em>kognitiv asymmetri</em>: skillnaden mellan att <em>skapa</em> en lösning och att <em>känna igen</em> den när den visas. Att lösa Sudoku kan ta tid, men att kontrollera ett färdigt förslag går snabbt. Att hitta en Hamiltoncykel i en graf är svårt, men att verifiera en given cykel är trivialt. </p>
+    <p> Det centrala olösta problemet är förstås frågan </p>
+    <p style="text-align:center;"> P ?= NP. </p>
+    <p> Om svaret vore ja, skulle varje problem vars lösning kan verifieras effektivt också kunna lösas effektivt. Det skulle i grunden förändra vår uppfattning om kreativitet, bevis, och beräkning: varje gåta med ett snabbt igenkännligt svar skulle kunna besvaras lika snabbt som den kunde verifieras. De flesta forskare tror dock att <em>P ≠ NP</em>: att det finns en verklig klyfta mellan att känna igen sanningen och att finna den. </p>
+    <hr/>
+    <p> Formeln i NP-definitionen innehåller en existenskvantifikator: <em>∃y</em>. Man kan se det som att ett problem i NP frågar: “Finns det ett vittne som övertygar verifieraren?” Men varför stanna där? Vad händer om vi lägger till ytterligare kvantifikatorer? </p>
+    <p> Tänk på ett problem där inte bara ett vittne ska hittas, utan där varje möjlig invändning måste kunna bemötas. Vi skulle då vilja uttrycka något som </p>
+    <p style="text-align:center;"> x ∈ A ⇔ ∃y₁ ∀y₂ : (x, y₁, y₂) ∈ B, där B ∈ P. </p>
+    <p> Här växlar vi mellan <em>existens</em> och <em>universalitet</em>, mellan “någon kan vinna” och “ingen kan motbevisa”. Detta leder oss till begreppet <strong>alternation</strong>, en generalisering av icke-determinism. I stället för att bara gissa en lösning (∃), tillåter vi ett växelspel mellan två aktörer: en existentiell spelare som försöker bevisa att instansen accepteras, och en universell som försöker motbevisa det. </p>
+    <hr/>
+    <p> Genom att tillåta fler växlingar av kvantifikatorer får vi en hel <strong>polynomiell hierarki</strong> av klasser: </p>
+    <p style="text-align:center;">
+      Σ₁<sup>P</sup> = NP, &nbsp; Π₁<sup>P</sup> = coNP,<br/>
+      Σ₂<sup>P</sup> = { A | ∃y₁ ∀y₂ : (x, y₁, y₂) ∈ B, B ∈ P },<br/>
+      Π₂<sup>P</sup> = { A | ∀y₁ ∃y₂ : (x, y₁, y₂) ∈ B, B ∈ P }, &nbsp; osv.
+    </p>
+    <p> Denna hierarki kan ses som en oändlig stege av växlande bevisbörda: varje nivå tillåter ytterligare ett lager av resonemang mellan bevis och motbevis, attacker och försvar. </p>
+    <p> Om vi någon gång skulle upptäcka att <em>P = NP</em>, skulle hela hierarkin kollapsa till basnivån: alla dessa komplexa former av interaktion skulle kunna lösas lika lätt som vanliga P-problem. Men varje försök att bevisa eller motbevisa detta har hittills misslyckats. </p>
+    <hr/>
+    <p> Ur ett logiskt perspektiv är NP exakt mängden av språk som kan uttryckas av formler i <strong>existentiell andra ordningens logik</strong> (Fagin, 1974): </p>
+    <p style="text-align:center;"> ∃R₁, …, Rₖ : φ(x, R₁, …, Rₖ), </p>
+    <p> där φ är en första ordningens formel som beskriver de polynomiella verifieringsstegen. Att gå från P till NP innebär alltså att gå från deterministisk beräkning till existentiell logik. Och att gå vidare upp i den polynomiella hierarkin är att växla mellan existentiella och universella kvantifikatorer, en slags beräkningsmässig dialektik. </p>
+    <hr/>
+    <p> Ur filosofisk synvinkel kan vi tolka dessa klasser som nivåer av kunskap. P-problem är sådant vi kan <em>beräkna direkt</em>. NP-problem är sådant vi kan <em>känna igen när vi ser det</em>. Π₂-problem är sådant vi kan känna igen <em>trots alla invändningar</em>. Och så vidare. </p>
+    <p> Beräkning blir då inte bara en fråga om tid och resurser, utan om hur många lager av resonemang som krävs för att övertyga en rationell agent. Varje kvantifikator motsvarar ett skifte mellan bevis och tvivel, mellan hopp och motstånd. </p>
+    <hr/>
+    <p> Från P till NP, och vidare upp genom den polynomiella hierarkin, ser vi en gradvis förfining av vad “att lösa” betyder. NP fångar det första steget bortom det mekaniska: den beräkning som kräver en gissning, en idé, ett vittne. Nästa steg, Σ₂ och Π₂, visar att vissa problem kräver en hel dialog mellan bevis och motbevis. </p>
+    <p> Kanske är det därför frågan om <em>P = NP</em> känns så grundläggande: den handlar inte bara om algoritmer, utan om själva gränsen mellan beräkning och förståelse. Om det visar sig att P ≠ NP, då är det en påminnelse om att vissa sanningar är lätta att känna igen men svåra att finna. Och om de någon gång visar sig vara lika, då betyder det att varje insikt som kan verifieras, också kan upptäckas, bara snabbare än vi någonsin trodde möjligt. </p>
+  </div>
+</article>
+
+
+    <article class="post" id="Why is there something rather than nothing?" data-date="2023-02-23">
+      <h2>Why is there something rather than nothing?</h2>
+      <div class="content">
+        <p>
+        
+Can space exist without time? In physics, probably not, because space and time are part of the same fabric.<br><br>
+But in math, you can easily describe space without needing time at all. You can have a shape, a geometry, just sitting there.<br><br>
+Time without space?. You could imagine a bare sequence of moments, one after another, but with no space for anything to exist in, what would those moments even contain? It would be time with no events, no change, no meaning.<br><br>
+Maybe both time and space only make sense when there’s something to fill them.<br><br>
+This makes me think of the concept of something being “vacuously true.” In logic, a statement like “all unicorns have blue horns” is true, not because we’ve seen any unicorns, but because there aren’t any to contradict it. It’s a kind of hollow truth, true by default.<br><br>
+Could something “vacuously exist”? Could there be a kind of existence that’s true only because there’s no framework for it to be false?<br><br>
+Maybe before space and time, before anything, there wasn’t “nothing,” but a sort of logical emptiness, a state where existence isn’t denied, but where the whole question doesn’t quite apply.<br><br>
+Why is there something rather than nothing? Maybe “nothing” isn’t actually stable or even possible. Maybe existence, in some sense, is the default, even if it begins in a kind of vacuous way, not filled, not structured, just the potential for things to be.<br><br>
+Maybe the universe didn’t emerge out of true nothingness, but out of this strange in-between state where “being” and “not being” hadn’t yet split apart.
+       
+</p>
+      </div>
+    </article>
+    
+        <article class="post" id="Nya Slussen" data-date="2025-07-14">
+      <h2>Nya Slussen</h2>
+      <div class="content">
+        <p>
+Folk har så enkla uppfattningar om vad som är vackert.<br>
+Som om det bara fanns ett språk för skönhet.<br>
+Folk ser något pråligt, överutsmyckat, som ser dyrt ut, och tänker “vackert”.<br>
+Man älskar det tydliga. <br>
+Vill att skönhet ska gå att känna igen på långt håll.<br>
+
+<br> Det blir nästan komiskt.<br>
+ De vill att världen ska se ut som på ett gammalt vykort.<br> 
+ Lite torn, lite spröjs, gärna något som ser “klassiskt” ut.<br>
+ De ser Disney-slottet, <br>
+  och suckar i kör: <br>
+  “tänk om man fick bygga så här igen”.<br> <br> 
+  
+  Jag gillar nya Slussen.<br> 
+  Torgen, glaset, vattnet.<br> 
+  Jag gillar att det inte längre är en stor trafikhärva.<br> 
+  Det känns som en rimlig utveckling.<br> <br>
+  
+   Att bara uppskatta nationalromantik, tjugotalsklassicism eller jugendstil är ungefär samma typ av inskränkta blick som hos den som bara kan uppskatta konst som föreställer något snällt och tydligt,<br> 
+   en ko på en äng,<br> 
+   ett blomsterstilleben.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
+  <script>
+    function collectPosts(){
+      return Array.from(document.querySelectorAll('#posts .post')).map(p=>({
+        id: p.id,
+        date: p.getAttribute('data-date') || '',
+        title: (p.querySelector('h2')?.textContent || '').trim(),
+        el: p
+      }));
+    }
+
+    function sortPostsByDate(posts){
+      return posts.sort((a,b)=> (a.date < b.date ? 1 : -1));
+    }
+
+    function buildTOC(posts){
+      const list = document.getElementById('toc-list');
+      list.innerHTML = '';
+      posts.forEach(p=>{
+        const a = document.createElement('a');
+        a.className = 'post-link';
+        a.href = `#${p.id}`;
+        a.innerHTML = `<span class="date">${p.date || '—'}</span><span class="title">${p.title || p.id}</span>`;
+        list.appendChild(a);
+      });
+    }
+
+    function showPost(post){
+      const view = document.getElementById('view');
+      const article = post.el.cloneNode(true);
+      // lägg till meta
+      const meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.textContent = post.date || '';
+      article.insertBefore(meta, article.querySelector('.content'));
+      // back-länk
+      const back = document.createElement('a');
+      back.href = '#'; back.className = 'back'; back.textContent = '← tillbaka';
+      back.addEventListener('click', (e)=>{ e.preventDefault(); showList(); history.replaceState({},'', location.pathname); });
+      view.innerHTML = '';
+      view.appendChild(back);
+      view.appendChild(article);
+      // scroll to top
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+
+    function showList(){
+      const view = document.getElementById('view');
+      view.innerHTML = '';
+    }
+
+    function route(posts){
+      const hash = decodeURIComponent(location.hash.replace(/^#/,''));
+      const match = posts.find(p=>p.id === hash);
+      if(match){ showPost(match); } else { showList(); }
+    }
+
+    window.addEventListener('DOMContentLoaded', ()=>{
+      const posts = sortPostsByDate(collectPosts());
+      buildTOC(posts);
+      route(posts);
+      window.addEventListener('hashchange', ()=>route(posts));
+    });
+  </script>
+</body>
+</html>
